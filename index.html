@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GIS Portfolio Template</title>
+<style>
+:root {
+--bg: #f5f7f9;
+--card: #ffffff;
+--text: #1f2933;
+--muted: #52606d;
+--accent: #1f6f8b;
+--accent-light: #d9eef4;
+--border: #d9e2ec;
+}
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+header {
+background: linear-gradient(135deg, #174a5a, #1f6f8b);
+color: white;
+padding: 3rem 1.5rem;
+}
+.container {
+max-width: 1100px;
+margin: 0 auto;
+}
+nav {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+margin-top: 1.25rem;
+}
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.hero h1 {
+margin: 0;
+font-size: 2.4rem;
+}
+.hero p {
+max-width: 700px;
+margin-top: 0.75rem;
+font-size: 1.05rem;
+}
+.buttons {
+margin-top: 1.5rem;
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.button {
+background: white;
+color: var(--accent);
+padding: 0.75rem 1rem;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+}
+main {
+padding: 2rem 1.5rem 4rem;
+}
+section {
+margin-top: 2rem;
+}
+.card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 1.5rem;
+box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+h2 {
+margin-top: 0;
+color: #12343f;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 1rem;
+}
+.skills-list, .project-meta {
+padding-left: 1.2rem;
+}
+.project-image {
+width: 100%;
+height: 220px;
+border-radius: 10px;
+background: var(--accent-light);
+border: 1px dashed var(--accent);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--accent);
+font-weight: bold;
+margin-bottom: 1rem;
+text-align: center;
+padding: 1rem;
+}
+.tag-group {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+margin-top: 0.75rem;
+}
+.tag {
+background: var(--accent-light);
+color: #184b5a;
+padding: 0.35rem 0.7rem;
+border-radius: 999px;
+font-size: 0.9rem;
+}
+footer {
+text-align: center;
+color: var(--muted);
+padding: 2rem 1rem 3rem;
+}
+@media (max-width: 700px) {
+.hero h1 {
+font-size: 2rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container hero">
+<h1>Jordan Lee</h1>
+<p>GIS Portfolio | Spatial Analysis | Cartography | Remote Sensing</p>
+<p>
+I am a geospatial student focused on using GIS to analyze environmental and
+community issues,
+communicate findings visually, and build practical skills for professional
+work in mapping,
+planning, and spatial data analysis.
+</p>
+<div class="buttons">
+<a class="button" href="#projects">View Projects</a>
+<a class="button" href="#skills">Skills</a>
+<a class="button" href="#contact">Contact</a>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main class="container">
+<section id="about">
+<div class="card">
+<h2>About Me</h2>
+<p>
+I am interested in environmental GIS, web mapping, and spatial
+storytelling. My work combines
+technical analysis with clear visual communication. This portfolio
+highlights projects that show
+how I collect, manage, analyze, and present geographic information for
+real-world applications.
+</p>
+</div>
+</section>
+<section id="skills">
+<div class="grid">
+<div class="card">
+<h2>Technical Skills</h2>
+<ul class="skills-list">
+<li>Spatial analysis</li>
+<li>Cartographic design</li>
+<li>Raster and vector workflows</li>
+<li>Georeferencing and data cleaning</li>
+<li>Remote sensing basics</li>
+<li>Field data collection</li>
+</ul>
+</div>
+<div class="card">
+<h2>Tools</h2>
+<ul class="skills-list">
+<li>ArcGIS Pro</li>
+<li>ArcGIS Online</li>
+<li>QGIS</li>
+<li>StoryMaps</li>
+<li>Excel</li>
+<li>Python</li>
+</ul>
+</div>
+<div class="card">
+<h2>Career Focus</h2>
+<p>
+Interested in GIS technician, geospatial analyst, planning support,
+conservation mapping,
+and environmental data visualization roles.
+</p>
+<div class="tag-group">
+<span class="tag">GIS Technician</span>
+<span class="tag">Cartography</span>
+<span class="tag">Remote Sensing</span>
+<span class="tag">Web Maps</span>
+</div>
+</div>
+</div>
+</section>
+<section id="projects">
+<h2>Featured Projects</h2>
+<div class="grid">
+<div class="card">
+<div class="project-image">Map or Project Image Placeholder</div>
+<h3>Urban Heat Analysis</h3>
+<p>
+This project examined land surface temperature patterns and their
+relationship to vegetation
+and built surfaces in an urban area.
+</p>
+<ul class="project-meta">
+<li><strong>Goal:</strong> Identify urban heat hotspots</li>
+<li><strong>Tools:</strong> ArcGIS Pro, Landsat data, Excel</li>
+<li><strong>Skills:</strong> Raster analysis, visualization,
+interpretation</li>
+</ul>
+<p><strong>Employment relevance:</strong> Demonstrates environmental
+analysis and map communication.</p>
+</div>
+<div class="card">
+<div class="project-image">Map or Web Map Screenshot Placeholder</div>
+<h3>Park Access Web Map</h3>
+<p>
+An interactive web map showing park locations, neighborhood access, and
+service areas to support
+community planning.
+</p>
+<ul class="project-meta">
+<li><strong>Goal:</strong> Evaluate public access to parks</li>
+<li><strong>Tools:</strong> ArcGIS Online, ArcGIS Pro</li>
+<li><strong>Skills:</strong> Web GIS, public communication, spatial
+thinking</li>
+</ul>
+<p><strong>Employment relevance:</strong> Shows ability to create public-
+facing GIS products.</p>
+</div>
+<div class="card">
+<div class="project-image">Suitability Model Placeholder</div>
+<h3>Habitat Suitability Model</h3>
+<p>
+A weighted overlay project identifying suitable habitat zones based on
+slope, vegetation,
+and proximity to roads and water.
+</p>
+<ul class="project-meta">
+<li><strong>Goal:</strong> Support conservation planning</li>
+<li><strong>Tools:</strong> ArcGIS Pro</li>
+<li><strong>Skills:</strong> Weighted overlay, raster processing,
+spatial modeling</li>
+</ul>
+<p><strong>Employment relevance:</strong> Demonstrates problem solving
+through multi-criteria analysis.</p>
+</div>
+</div>
+</section>
+<section id="resume">
+<div class="card">
+<h2>Resume</h2>
+<p>Add a downloadable PDF resume here along with a short summary of
+qualifications.</p>
+<p><strong>Suggested items:</strong> education, technical skills,
+internships, lab work, certifications.</p>
+</div>
+</section>
+<section id="contact">
+<div class="card">
+<h2>Contact</h2>
+<p>Email: yourname@email.com</p>
+<p>LinkedIn: linkedin.com/in/yourname</p>
+<p>GitHub: github.com/yourusername</p>
+</div>
+</section>
+</main>
+<footer>
+GIS Portfolio Template for student adaptation on GitHub Pages or other
+portfolio platforms.
+</footer>
+</body>
+</html>
